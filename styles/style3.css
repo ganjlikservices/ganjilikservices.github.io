@@ -1,5 +1,6 @@
 html {
-    background-image: url('../../images/backgroud_graffiti.jpg');
+/*    background-image: url('../../images/backgroud_graffiti.jpg');*/
+    background-image: url('../images/backgroud_graffiti.jpg');
     background-size: contain;
     filter: saturate(110%) contrast(120%);
 }
@@ -15,16 +16,6 @@ body {
     font-style: italic;
     font-size: 1.5rem;
     color: #8C92AC;
-}
-
-
-header.main-header {
-    background-image: linear-gradient(99.9deg, rgb(16 16 18) 21.2%, rgb(50 30 76) 84.8%);
-    background-color: #241524;
-    color: #fff;
-    padding: 2rem;
-    opacity: 0.95;
-    border-bottom: solid 1px #0c0e10;
 }
 
 
@@ -83,7 +74,8 @@ tfoot th {
 }
 
 thead, tfoot {
-    background-image: url('../../images/leopardskin.jpg');
+    background-image: url('../images/leopardskin.jpg');
+/*    background-image: url('../../images/leopardskin.jpg');*/
     color: #fff;
     text-shadow: 1px 1px 1px black
 }
@@ -248,14 +240,20 @@ body {
 }
 
 header.main-header {
-    background-image: linear-gradient(99.9deg, rgba(27,24,31,1) 21.2%, rgba(50,4,89,1) 84.8%);
-    background-color: purple;
+/*    background-image: linear-gradient(99.9deg, rgba(27,24,31,1) 21.2%, rgba(50,4,89,1) 84.8%);*/
+/*    background-color: purple;*/
     color: #fff;
+        background-image: url('../images/ps10.jpg');
+/*    background-image: linear-gradient(99.9deg, rgb(16 16 18) 21.2%, rgb(50 30 76) 84.8%);*/
+    background-color: #241524;
+    background-size: cover;
     padding: 2rem;
+    opacity: 0.75;
+    border-bottom: solid 1px #0c0e10;
 }
 
 .avatar-figure {
-    background-image: url('./images/stars.jpg');
+    background-image: url('../images/stars.jpg');
     background-color: rgb(47, 47, 91);
     background-size: cover;
     margin: 0;
@@ -289,15 +287,15 @@ a.contact:active {
 }
 
 .contact-phone::before{
-    background-image: url('./images/phone-call.svg');        
+    background-image: url('../images/phone-call.svg');        
 }
 
 .contact-inst::before {
-    background-image: url('./images/instagram-logo.svg');
+    background-image: url('../images/instagram-logo.svg');
 }
 
 .contact-twitter::before {
-    background-image: url('./images/twitter.svg');
+    background-image: url('../images/twitter.svg');
 }
 
 h1 {
@@ -316,8 +314,8 @@ section.summary {
 
 .space {
     background: 
-        url('./images/rocket_big.png') no-repeat center, 
-        url('./images/space.jpg') no-repeat bottom center;
+        url('../images/rocket_big.png') no-repeat center, 
+        url('../images/space.jpg') no-repeat bottom center;
     float: left;
     width:  8rem;   
     height:  8rem;
@@ -365,7 +363,8 @@ tfoot th {
 }
 
 thead, tfoot {
-    background-image: url('../../images/leopardskin.jpg');
+/*    background-image: url('../../images/leopardskin.jpg');*/
+    background-image: url('../images/leopardskin.jpg');
     color: #fff;
     text-shadow: 1px 1px 1px black
 }
@@ -471,3 +470,14 @@ code {
 
 
 
+.scale {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+   }
+   .scale img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+   }
+   .scale img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+   }
